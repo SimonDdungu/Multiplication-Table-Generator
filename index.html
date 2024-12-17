@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="author" content="Simon">
+    <meta name="description" content="A multiplication table of any 3 digit number you enter">
+    <meta name="keywords" content="Multiplication Table">
+
+    <!--FAV ICON-->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+
+    <!--CUSTOM CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Multiplication Table</title>
+</head>
+<body>
+    <div class="main">
+        <h1><strong>QUATUM DEVELOPERS <br>MULTIPLICATION TABLE</strong></h1>
+
+        <form action="">
+            <h3>Enter a Number:</h3>
+            <input type="text" inputmode="numeric" maxlength="3" class="User" oninput="this.value = this.value.replace(/[^0-9]/g, '')" required>
+            <button type="submit" class="Submit">Submit</button>
+        </form>
+
+        <div class="Table">
+            <span class="Heading"></span>
+            <table style="display: none;">
+                <thead>
+                    <tr>
+                        <th>Number</th>
+                        <th>Answer</th>
+                    </tr>
+                </thead>
+                <tbody class="Table_body">
+                    
+                </tbody>
+            </table>
+        </div>
+
+
+
+
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
