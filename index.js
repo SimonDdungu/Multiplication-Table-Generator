@@ -45,7 +45,6 @@ function generateMultiplicationTable(User){
 
     }
 
-    Form.reset();
 }
 
 Submit.addEventListener("click", (e) => {
